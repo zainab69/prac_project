@@ -1,0 +1,42 @@
+/* Dropdown.css */
+
+.dropdown {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.dropdown:hover {
+  border-color: #888;
+}
+
+.dropdown:focus {
+  border-color: #555;
+  background-color: #f1f1f1;
+}
+
+.dropdown option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+
+.dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #333;
+}
